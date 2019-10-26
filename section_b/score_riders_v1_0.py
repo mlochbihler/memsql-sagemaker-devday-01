@@ -75,7 +75,7 @@ def read_in():
           
           # Call Sagemaker API endpoint to generate ML score
           #     Payload for ML Inference call can be found in num_riders_temp_file
-          #     Output of ML Inference call is plaed in model_scores_temp_file
+          #     Output of ML Inference call is placed in model_scores_temp_file
 
           cmd = 'aws sagemaker-runtime invoke-endpoint --endpoint-name ' + model_name + '  --region ' + aws_region + ' --body file://' + num_riders_temp_file + ' --content-type "text/csv" ' + model_scores_temp_file
           so = os.popen(cmd).read()
