@@ -1,0 +1,10 @@
+USE nyc_taxi;
+
+SET GLOBAL pipelines_max_offsets_per_batch_partition=10000;
+ALTER PIPELINE drivers SET OFFSETS EARLIEST;
+ALTER PIPELINE trips SET OFFSETS EARLIEST;
+ALTER PIPELINE neighborhoods SET OFFSETS EARLIEST;
+
+START PIPELINE drivers;
+START PIPELINE trips;
+START PIPELINE neighborhoods;
