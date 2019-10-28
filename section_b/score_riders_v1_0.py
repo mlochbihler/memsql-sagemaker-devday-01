@@ -16,8 +16,15 @@ https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to
 Edits Required:
 Add values below for Temporary Work Directory, Model Inference Name, Cloud Region, and AWS Credentials
 
-test usage:
+Test usage:
 cat nyc_taxi.csv | python score_riders.py
+
+Sample Test Dataset(nyc_taxi.csv):
+
+2014-07-01 00:00:00,10844
+2014-07-01 00:30:00,8127
+2014-07-01 01:00:00,6210
+2014-07-01 01:30:00,4656
 
 version: 1.0
 last updated: 10.25.19
