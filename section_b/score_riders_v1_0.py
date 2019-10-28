@@ -8,6 +8,11 @@ Used in MemSQL Pipeline to derive a ML score for each event from Numenta Anomaly
 https://github.com/numenta/NAB/blob/master/data/realKnownCause/nyc_taxi.csv
 For production deployments, modify to pass batch sets to Sagemaker API and deploy one ML endpoint per leaf
 
+Assumptions:
+A Random Cut Forest Anomaly Detection ML Model has already been trained and deployed as an Inference Restful API Endpoint.
+Here is an AWS Sagemaker Notebook which can be used to deploy the ML Model needed for this Transform:
+https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/random_cut_forest/random_cut_forest.ipynb
+
 Edits Required:
 Add values below for Temporary Work Directory, Model Inference Name, Cloud Region, and AWS Credentials
 
