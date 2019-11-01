@@ -2,7 +2,7 @@ use nyc_taxi;
 
 CREATE PIPELINE nab_nyctaxi_scored
  AS LOAD DATA S3 'lochbihler/nyctaxi/'
- WITH TRANSFORM ('file:///home/memsql/score_riders.py', '', '')
+ WITH TRANSFORM ('file:///home/ec2-user/memsql-sagemaker-devday-01/section_b', '', '')
  SKIP DUPLICATE KEY ERRORS
 INTO TABLE nab_nyctaxi_scored
  FIELDS TERMINATED BY ','
