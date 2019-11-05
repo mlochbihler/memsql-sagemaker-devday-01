@@ -14,7 +14,10 @@ Here is an AWS Sagemaker Notebook which can be used to deploy the ML Model neede
 https://github.com/awslabs/amazon-sagemaker-examples/blob/master/introduction_to_amazon_algorithms/random_cut_forest/random_cut_forest.ipynb
 
 Edits Required:
-Add values below for Temporary Work Directory, Model Inference Name, Cloud Region, and AWS Credentials
+Add values below for Temporary Work Directory, Model Inference Name, Cloud Region
+
+Optional Edits:
+If you need to set AWS Credentials due to security setting in your environment
 
 Test usage:
 cat nyc_taxi.csv | python score_riders.py
@@ -39,14 +42,17 @@ import datetime
 inlines = sys.stdin if sys.version_info < (3, 0) else sys.stdin.buffer
 outlines = sys.stdout if sys.version_info < (3, 0) else sys.stdout.buffer
 
-# Temporary Work Directory
+# REQUIRED EDIT: Temporary Work Directory
 tmpdir = '<INSERT TEMPORARY DIRECTORY>'
+# Example: tmpdir = '/tmp/memsqltmp/'
 
-# Model Inference Name - Restful API Endpoint
+# REQUIRED EDIT: Model Inference Name - Restful API Endpoint
 model_name = '<INSERT NAME OF SAGEMAKER MODEL>'
+# Example: model_name = 'randomcutforest-2019-10-15-16-34-13-301'
 
-# Cloud Region
+# REQUIRED EDIT: Cloud Region
 aws_region = '<INSERT AWS REGION>'
+# Example: aws_region = 'us-east-1'
 
 
 # read_in procedure runs ML model for each line in STDIN adding derived score to end of each event
@@ -119,7 +125,7 @@ def main():
     if not os.path.exists(tmpdir):
        os.mkdir(tmpdir, 0755 );
 
-    # Add AWS Credentials which will be used by memsql id from inside memsql cluster nodes
+    # OPTIONAL: Add AWS Credentials which will be used by memsql id from inside memsql cluster nodes
     os.environ["AWS_ACCESS_KEY_ID"] = "<INSERT AWS ACCESS KEY ID>"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "<INSERT AWS SECRET ACCESS KEY>"
     os.environ["AWS_SECURITY_TOKEN"] = "<INSERT AWS SECURITY TOKEN>"
