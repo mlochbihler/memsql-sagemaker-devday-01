@@ -1,4 +1,4 @@
-use nyc_taxi;
+USE nyc_taxi;
 
 -- The average amount of time between someone requesting a ride and that person being picked up
 SELECT ROUND(AVG(pickup_time - request_time) / 60,2) val
