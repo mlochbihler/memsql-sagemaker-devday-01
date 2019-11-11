@@ -42,16 +42,16 @@ import datetime
 inlines = sys.stdin if sys.version_info < (3, 0) else sys.stdin.buffer
 outlines = sys.stdout if sys.version_info < (3, 0) else sys.stdout.buffer
 
-# REQUIRED EDIT: Temporary Work Directory
-tmpdir = '<INSERT TEMPORARY DIRECTORY>'
+# OPTIONAL EDIT: Temporary Work Directory
+tmpdir = '/tmp/memsqltmp/'
 # Example: tmpdir = '/tmp/memsqltmp/'
 
 # REQUIRED EDIT: Model Inference Name - Restful API Endpoint
-model_name = '<INSERT NAME OF SAGEMAKER MODEL>'
-# Example: model_name = 'randomcutforest-2019-10-15-16-34-13-301'
+model_name = '<INSERT YOUR MODEL API ENDPOINT NAME HERE>'
+# Example: model_name = 'randomcutforest-2019-11-11-20-40-59-680'
 
-# REQUIRED EDIT: Cloud Region
-aws_region = '<INSERT AWS REGION>'
+# OPTIONAL EDIT: Cloud Region
+aws_region = 'us-east-1'
 # Example: aws_region = 'us-east-1'
 
 
@@ -125,9 +125,10 @@ def main():
     if not os.path.exists(tmpdir):
        os.mkdir(tmpdir, 0755 );
 
-    # OPTIONAL: Add AWS Credentials which will be used by memsql id from inside memsql cluster nodes
+    # REQUIRED EDITS: Add AWS Credentials which will be used by memsql id from inside memsql cluster nodes
     os.environ["AWS_ACCESS_KEY_ID"] = "<INSERT AWS ACCESS KEY ID>"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "<INSERT AWS SECRET ACCESS KEY>"
+    # OPTIONAL EDIT: Add AWS Credentials
     os.environ["AWS_SECURITY_TOKEN"] = "<INSERT AWS SECURITY TOKEN>"
 
     # Execute read_in procedure which reads in and processes STDIN
