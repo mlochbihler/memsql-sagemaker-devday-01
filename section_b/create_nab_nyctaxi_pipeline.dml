@@ -2,8 +2,9 @@ use nyc_taxi;
 
 CREATE PIPELINE nab_nyctaxi_scored
  AS LOAD DATA S3 'lochbihler/nyctaxi/'
+ CONFIG '{"region":"us-east-1"}'
  WITH TRANSFORM ('file:///home/ec2-user/memsql-sagemaker-devday-01/section_b/score_riders_v1_0.py', '', '')
  SKIP DUPLICATE KEY ERRORS
-INTO TABLE nab_nyctaxi_scored
+ INTO TABLE nab_nyctaxi_scored
  FIELDS TERMINATED BY ','
  LINES TERMINATED BY '\n';
