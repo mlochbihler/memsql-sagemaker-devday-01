@@ -6,7 +6,7 @@ Hands On Workshop - Student Guide
 (pdf): https://drive.google.com/file/d/1-aIGchMRoH37DPYmR5-PT_xRBno-F0RA/view?usp=sharing
 
 
-Previous Presentation Deck 
+Presentation Deck 
 
 (pdf): https://drive.google.com/file/d/1EklixQryoKsovMxrhnVkwx9Rn7C9kvFU/view?usp=sharing
 
