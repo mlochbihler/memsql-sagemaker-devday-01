@@ -19,6 +19,7 @@ LINES TERMINATED BY '\n' STARTING BY '';
 -- terminated by tab as the the polygons contain commas
 CREATE PIPELINE neighborhoods
 AS LOAD DATA S3 'memsql-datafeeds/nyc-taxi-data/'
+config '{"region":"us-east-1"}'
 REPLACE
 INTO TABLE neighborhoods
 FIELDS TERMINATED BY '\t' ENCLOSED BY '' ESCAPED BY '\\'
