@@ -1,0 +1,572 @@
+{
+    "title": "memsql-LIVE",
+    "type": "live",
+    "relations": [
+        {
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "186caa06-172f-497c-b303-051dfacf5f71",
+                    "column": "e1a650e8-c0aa-4a7e-8761-b1af4ccea145"
+                },
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "802b6c9a-a3d1-4127-9541-fe0f1e61e193",
+                    "column": "590d2618-b91e-46be-9057-d232b045bc95"
+                }
+            ]
+        },
+        {
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "ad4303f9-7ea1-45a7-ab08-8ed71e7e6aa7",
+                    "column": "d76ddf75-a3e6-4534-8cfa-bf470ea5a07b"
+                },
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "802b6c9a-a3d1-4127-9541-fe0f1e61e193",
+                    "column": "590d2618-b91e-46be-9057-d232b045bc95"
+                }
+            ]
+        },
+        {
+            "type": null,
+            "columns": [
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "06d47d6a-2332-4f7e-a093-618748bada8b",
+                    "column": "06cca9d4-f4f6-4cf8-b932-2ce8c7a7741f"
+                },
+                {
+                    "dataset": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+                    "table": "802b6c9a-a3d1-4127-9541-fe0f1e61e193",
+                    "column": "043711a6-20dc-4e5e-acec-ac83fcebf0a3"
+                }
+            ]
+        }
+    ],
+    "datasets": [
+        {
+            "oid": "73c69a8e-2cd4-4ced-aff3-a347d8b0aafc",
+            "fullname": "Memsql:memsql-LIVE",
+            "type": "live",
+            "name": "memsql-LIVE",
+            "modelingTransformations": [],
+            "schema": {
+                "tables": [
+                    {
+                        "oid": "802b6c9a-a3d1-4127-9541-fe0f1e61e193",
+                        "id": "tq_5VYQNvGfZ",
+                        "name": "trips",
+                        "type": "base",
+                        "expression": null,
+                        "columns": [
+                            {
+                                "oid": "590d2618-b91e-46be-9057-d232b045bc95",
+                                "id": "id",
+                                "name": "id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "89a127a6-cf0f-4ce5-9f9b-4d1b05b8d54a",
+                                "id": "status",
+                                "name": "status",
+                                "type": 18,
+                                "size": 16,
+                                "precision": 16,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "4ac05815-c006-4c76-883e-aeacbb6a6c77",
+                                "id": "pickup_location",
+                                "name": "pickup_location",
+                                "type": 18,
+                                "size": 48,
+                                "precision": 48,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "e60cfd7e-a5ee-4e11-b677-654951f934f3",
+                                "id": "dropoff_location",
+                                "name": "dropoff_location",
+                                "type": 18,
+                                "size": 48,
+                                "precision": 48,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "66a7de14-0657-4d52-8660-b2e91f2a18eb",
+                                "id": "request_time",
+                                "name": "request_time",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "ee3fb894-6ede-4205-a640-3adce7329201",
+                                "id": "request_attempts",
+                                "name": "request_attempts",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "f4c2a1da-d401-4ad6-9ea8-1b44d44e43a8",
+                                "id": "accept_time",
+                                "name": "accept_time",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "5856a719-8d74-4c8c-ad1f-b770c5a1f15c",
+                                "id": "pickup_time",
+                                "name": "pickup_time",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "4fce0da3-7a35-4f33-8c38-5c4b6bbd05e7",
+                                "id": "dropoff_time",
+                                "name": "dropoff_time",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "15cf66cc-1718-41d2-9425-f28772323a3b",
+                                "id": "num_riders",
+                                "name": "num_riders",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "bf35eb36-baa5-4538-8d7e-0768ff97c286",
+                                "id": "price",
+                                "name": "price",
+                                "type": 8,
+                                "size": 11,
+                                "precision": 11,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "043711a6-20dc-4e5e-acec-ac83fcebf0a3",
+                                "id": "driver_id",
+                                "name": "driver_id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "03a5b7c8-499f-4d29-a24a-94d78f368952",
+                                "id": "pickup_datetime",
+                                "name": "pickup_datetime",
+                                "type": 19,
+                                "size": 26,
+                                "precision": 26,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "802b6c9a-a3d1-4127-9541-fe0f1e61e193",
+                        "configOptions": {
+                            "importQuery": "select *,from_unixtime(t.pickup_time) as pickup_datetime from trips t"
+                        },
+                        "description": null,
+                        "tags": null
+                    },
+                    {
+                        "oid": "ad4303f9-7ea1-45a7-ab08-8ed71e7e6aa7",
+                        "id": "tq_K7oAZK4ZY",
+                        "name": "Metrics",
+                        "type": "base",
+                        "expression": null,
+                        "columns": [
+                            {
+                                "oid": "d76ddf75-a3e6-4534-8cfa-bf470ea5a07b",
+                                "id": "id",
+                                "name": "id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "7fbe5500-d2e5-4cb5-8d33-ef0dfb6607a8",
+                                "id": "avg_wait_time",
+                                "name": "avg_wait_time",
+                                "type": 5,
+                                "size": 16,
+                                "precision": 14,
+                                "scale": 2,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "6b59dc2f-a580-477e-ac41-345ab98b3dc1",
+                                "id": "avg_distance",
+                                "name": "avg_distance",
+                                "type": 6,
+                                "size": 50,
+                                "precision": 50,
+                                "scale": 2,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "b5601077-963c-4dd7-8982-607799631f30",
+                                "id": "avg_ride_time",
+                                "name": "avg_ride_time",
+                                "type": 5,
+                                "size": 16,
+                                "precision": 14,
+                                "scale": 2,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "dcb2ab15-8630-4d90-954f-9f66499d791a",
+                                "id": "avgwait_driver",
+                                "name": "avgwait_driver",
+                                "type": 5,
+                                "size": 16,
+                                "precision": 14,
+                                "scale": 2,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "f4e5c6eb-c8cf-4e20-b0b5-916aaac9eedb",
+                                "id": "avgriders",
+                                "name": "avgriders",
+                                "type": 5,
+                                "size": 15,
+                                "precision": 13,
+                                "scale": 2,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "ad4303f9-7ea1-45a7-ab08-8ed71e7e6aa7",
+                        "configOptions": {
+                            "importQuery": "SELECT distinct\n    t.id,\n    ROUND((pickup_time - request_time) / 60,2) as avg_wait_time,\n    ROUND((geography_distance(pickup_location, dropoff_location) / 1000), 2) as avg_distance,\n    ROUND((dropoff_time - pickup_time) / 60, 2) as avg_ride_time,\n    ROUND((pickup_time - accept_time) / 60, 2) as avgwait_driver,\n    ROUND(AVG(num_riders), 2) as avgriders\n       \tFROM trips t, neighborhoods n\n      \t WHERE n.id IN (SELECT id \n                                    FROM neighborhoods) AND\n       \t\t      GEOGRAPHY_INTERSECTS(t.pickup_location, n.polygon)\n                     GROUP BY t.id"
+                        },
+                        "description": null,
+                        "tags": null
+                    },
+                    {
+                        "oid": "186caa06-172f-497c-b303-051dfacf5f71",
+                        "id": "tq_GqmpaWfCj",
+                        "name": "GeoData",
+                        "type": "base",
+                        "expression": null,
+                        "columns": [
+                            {
+                                "oid": "e1a650e8-c0aa-4a7e-8761-b1af4ccea145",
+                                "id": "id",
+                                "name": "id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "a0575ab3-226d-4b2e-b9ba-22b4703bfcf5",
+                                "id": "name",
+                                "name": "name",
+                                "type": 18,
+                                "size": 128,
+                                "precision": 128,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "9da53c42-17a4-455a-822a-83be0f1e3fd2",
+                                "id": "borough",
+                                "name": "borough",
+                                "type": 18,
+                                "size": 128,
+                                "precision": 128,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "2430d8d5-a081-4f7d-8d61-06b65ca88e4b",
+                                "id": "pickup_lat",
+                                "name": "pickup_lat",
+                                "type": 6,
+                                "size": 50,
+                                "precision": 50,
+                                "scale": 31,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "d5b13ad9-9d3a-4df3-9a40-8ce6f580dd20",
+                                "id": "pickup_long",
+                                "name": "pickup_long",
+                                "type": 6,
+                                "size": 50,
+                                "precision": 50,
+                                "scale": 31,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "d06b8f72-0183-4d8f-a9ac-370a58c2fc65",
+                                "id": "dropoff_lat",
+                                "name": "dropoff_lat",
+                                "type": 6,
+                                "size": 50,
+                                "precision": 50,
+                                "scale": 31,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "52aff48c-92c2-4761-958c-1fa1c0654dc9",
+                                "id": "dropoff_long",
+                                "name": "dropoff_long",
+                                "type": 6,
+                                "size": 50,
+                                "precision": 50,
+                                "scale": 31,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "186caa06-172f-497c-b303-051dfacf5f71",
+                        "configOptions": {
+                            "importQuery": "SELECT  distinct\n    t.id, n.name,n.borough,\n    geography_latitude(t.pickup_location) as pickup_lat,\n    geography_longitude(t.pickup_location) as pickup_long,\n    geography_latitude(t.dropoff_location) as dropoff_lat, \n    geography_longitude(t.dropoff_location) as dropoff_long\n       \tFROM trips t, neighborhoods n\n      \t WHERE n.id IN (SELECT id \n                                    FROM neighborhoods) AND\n       \t\t      GEOGRAPHY_INTERSECTS(t.pickup_location, n.polygon)"
+                        },
+                        "description": null,
+                        "tags": null
+                    },
+                    {
+                        "oid": "06d47d6a-2332-4f7e-a093-618748bada8b",
+                        "id": "tq_Njd4qHz3v",
+                        "name": "drivers",
+                        "type": "base",
+                        "expression": null,
+                        "columns": [
+                            {
+                                "oid": "06cca9d4-f4f6-4cf8-b932-2ce8c7a7741f",
+                                "id": "id",
+                                "name": "id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "b43f2a08-f619-4905-92c1-0b4e049b4fdf",
+                                "id": "first_name",
+                                "name": "first_name",
+                                "type": 18,
+                                "size": 128,
+                                "precision": 128,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "b67c5790-dc0e-49e7-92cc-1d434f2d25dc",
+                                "id": "last_name",
+                                "name": "last_name",
+                                "type": 18,
+                                "size": 128,
+                                "precision": 128,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "3567fc03-d50b-428c-81cf-19f9822fef51",
+                                "id": "location",
+                                "name": "location",
+                                "type": 18,
+                                "size": 48,
+                                "precision": 48,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "63e57b97-ee4e-4040-a8ea-72c6ebccee8d",
+                                "id": "goal_location",
+                                "name": "goal_location",
+                                "type": 18,
+                                "size": 48,
+                                "precision": 48,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "description": null
+                            },
+                            {
+                                "oid": "2f4a63ed-a429-4ee3-949c-6d2f1e925f5e",
+                                "id": "status",
+                                "name": "status",
+                                "type": 18,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "a8406bed-3fa5-415e-a1c4-cf305ad82b61",
+                                "id": "trip_id",
+                                "name": "trip_id",
+                                "type": 0,
+                                "size": 20,
+                                "precision": 20,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": true,
+                                "description": null
+                            },
+                            {
+                                "oid": "18c7a38c-6378-4f01-8846-599c1d0973ee",
+                                "id": "full_name",
+                                "name": "full_name",
+                                "type": 18,
+                                "size": 715827882,
+                                "precision": 715827882,
+                                "scale": 0,
+                                "hidden": false,
+                                "indexed": false,
+                                "description": null
+                            }
+                        ],
+                        "buildBehavior": {
+                            "type": "sync",
+                            "accumulativeConfig": null
+                        },
+                        "tupleTransformations": [],
+                        "hidden": false,
+                        "vTag": "06d47d6a-2332-4f7e-a093-618748bada8b",
+                        "configOptions": {
+                            "importQuery": "SELECT *,concat(d.first_name,' ',d.last_name) as full_name FROM nyc_taxi.drivers d"
+                        },
+                        "description": null,
+                        "tags": null
+                    }
+                ]
+            },
+            "connection": {
+                "id": "5e4c23f33b18b0002cfe08f4",
+                "provider": "Memsql",
+                "parameters": "ESmgNGRlhXhTTFCj2+VjYkDNBrkTQ2W15gAUMbzxsqm9YbD1Xf/fmFb8hgKdySPjg5V22205bGBC61riIHDU0U923cTW6Fv6LBtEH5k9VyqlbaEdNcAAAV5mehGyIBcj9t+dwkusncsth6sCVzMs67YCXgVqXjYCzoF4CP9Em+Ebz6vCHofUMp5GmZuZhAcz1+EvYf0hjTjHbSYhprEBCMcmMBEUdNwHum2tzlEO4sxkmYLAf4B6UoTmipN3yuxlej07ndrsea6NHlULGVJRdw==",
+                "schema": "TempTableQuerySchema",
+                "fileName": null,
+                "timeout": 60000,
+                "autoRefresh": true,
+                "refreshRate": 5000,
+                "resultLimit": 5000,
+                "protectedParameters": [
+                    "password"
+                ],
+                "uiParams": {},
+                "globalTableConfigOptions": {}
+            }
+        }
+    ]
+}
