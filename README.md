@@ -7,7 +7,7 @@ Presentation Deck
 
 Hands On Workshop - Student Guide
 
-(pdf): https://drive.google.com/file/d/1-aIGchMRoH37DPYmR5-PT_xRBno-F0RA/view?usp=sharing
+(pdf): https://drive.google.com/file/d/16U4a8YSOlJlPS7p9zeegJDSnzcTD3Mec/view?usp=sharing
 
 
 Also, for Section A and B, the code for each step is in this github under individual folders folders.
