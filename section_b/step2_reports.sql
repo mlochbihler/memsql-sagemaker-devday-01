@@ -1,0 +1,10 @@
+use nyc_taxi;
+select * from trips limit 5;
+select * from drivers limit 5;
+source total_trips.sql;
+source average_wait.sql;
+source average_distance.sql;
+source average_ride_time.sql;
+source average_cost.sql;
+source average_wait2.sql;
+source average_num_riders.sql;
