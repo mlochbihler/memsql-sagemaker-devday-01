@@ -9,5 +9,8 @@ Hands On Workshop - Student Guide
 
 (pdf): https://drive.google.com/file/d/1TzCnMK_tlZDRvmb1Q1MeFHI887YS5_z9/view?usp=sharing
 
+Workshop FAQs
+(pdf): https://drive.google.com/file/d/1DwKmT3BsvTnylz1JRXeDD5zKynSz9lDY/view?usp=sharing
+
 
 Also, for Section A and B, the code for each step is in this github under individual folders folders.
