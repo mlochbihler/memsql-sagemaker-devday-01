@@ -51,7 +51,7 @@ model_name = '<INSERT YOUR MODEL API ENDPOINT NAME HERE>'
 # Example: model_name = 'randomcutforest-2019-11-11-20-40-59-680'
 
 # OPTIONAL EDIT: Cloud Region
-aws_region = 'us-east-1'
+aws_region = '<INSERT YOUR AWS REGION NAME HERE>'
 # Example: aws_region = 'us-east-1'
 
 
@@ -129,7 +129,7 @@ def main():
     os.environ["AWS_ACCESS_KEY_ID"] = "<INSERT AWS ACCESS KEY ID>"
     os.environ["AWS_SECRET_ACCESS_KEY"] = "<INSERT AWS SECRET ACCESS KEY>"
     # OPTIONAL EDIT: Add AWS Credentials
-    os.environ["AWS_SECURITY_TOKEN"] = "<INSERT AWS SECURITY TOKEN>"
+    #os.environ["AWS_SECURITY_TOKEN"] = "<INSERT AWS SECURITY TOKEN>"
 
     # Execute read_in procedure which reads in and processes STDIN
     lines = read_in()
