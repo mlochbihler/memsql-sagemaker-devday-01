@@ -3,11 +3,11 @@ MemSQL and AWS Sagemaker Developer Day 01
 
 Presentation Deck 
 
-(pdf): https://drive.google.com/file/d/12_On1Y2jdjwwN7_BVgQofY2k80HzE3lN/view?usp=sharing
+(pdf): https://drive.google.com/file/d/1KCfBCqnUMdC2VlclYkb2mq-QMsMmGY4B/view?usp=sharing
 
 Hands On Workshop - Student Guide
 
-(pdf): https://drive.google.com/file/d/1PNkegA3ee8Ie-SvvR4MPoyEXohMIA3DY/view?usp=sharing
+(pdf): https://drive.google.com/file/d/10OrpI_uz9nA2igrHQzJo3BEEdECQs3-T/view?usp=sharing
 
 Workshop FAQs
 
