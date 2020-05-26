@@ -11,7 +11,7 @@ Hands On Workshop - Student Guide
 
 Workshop FAQs
 
-(pdf): https://drive.google.com/file/d/1dzwA0O2wH4MM7C8AauejzLcKQO9wayiN/view?usp=sharing
+(pdf): https://drive.google.com/file/d/1WNOTchx-R4rnwR9QuHFmAm3WcTUJ9BGz/view?usp=sharing
 
 
 Also, for Section A and B, the code for each step is in this github under individual folders folders.
