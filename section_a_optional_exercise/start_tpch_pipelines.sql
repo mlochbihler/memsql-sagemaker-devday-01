@@ -1,2 +1,0 @@
-use tpch;
-START ALL PIPELINES;
