@@ -1,0 +1,2 @@
+use tpch;
+STOP ALL PIPELINES;
